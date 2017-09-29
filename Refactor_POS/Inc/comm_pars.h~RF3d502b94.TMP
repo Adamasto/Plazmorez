@@ -1,0 +1,34 @@
+#ifndef COMM_PARS_H
+#define COMM_PARS_H
+
+
+#define SYMBOL_NUM_AXIS 1 //number of symbols in axis
+#define SYMBOL_NUM_CMD 2 //number of symbols in command
+
+#define  AXIS_NUM  2 // number of axis
+#define COMMAND_NUM 5 //number of commands
+
+#define NUM_PARAM 10
+
+enum{
+	acceleration = 0,
+	decceleration,
+	max_speed,
+	end_point,
+	go,
+	maxSpeedToAc,
+	maxStepToAc,
+	maxStepToMa,
+	maxStepToDc,
+};
+
+
+void ComPar_GetPacket(char* data, int len);
+char* ComPar_GetAxis();
+char* ComPar_GetCommand();
+int ComPar_GetValue();
+
+
+
+
+#endif /* COMM_PARS_H */

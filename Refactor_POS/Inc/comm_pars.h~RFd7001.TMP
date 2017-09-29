@@ -1,0 +1,147 @@
+#ifndef COMM_PARS_H
+#define COMM_PARS_H
+
+
+#include <stdint.h>
+#include "posicioner_config.h"
+
+
+
+
+#pragma anon_unions
+typedef union {
+	struct {
+		char ethAxis[SYMBOL_NUM_AXIS];
+		char ethCmd[SYMBOL_NUM_CMD];
+		char ethSymb;
+		char ethValue[9];
+	};
+} TEthPacket;
+
+enum{
+	max_speed = 0,
+	acceleration ,
+	decceleration,	
+	end_point,
+	go,
+	st,
+	ts,
+	
+	maxSpeedToAc,
+	maxStepToAc,
+	maxStepToMa,
+	maxStepToDc,
+};
+
+typedef struct
+{
+	int command[COMMAND_NUM]; // for command retrieving
+
+	int start_position_mm; // position in starting run
+	int max_speed_mm; // max speed of engine (mm in second)
+	int acceleration_mm; // acceleration of engine 
+	int deceleration_mm; // deceleration of engine
+	int end_position_mm; // target position
+	int current_position_mm; // current position
+	float currentSpeed_mm; // current speed (impulse of pwm in second on mm)
+	float currentSpeed_encoder_mm; // current speed(encoder steps in second on mm)
+	float current_acceleration_encoder_mm; // current acceleration (encoder steps in second * second on mm)
+	
+	int max_speed; 
+	int acceleration;
+	int deceleration;
+	int end_position;
+	float current_position;
+	int start_position;
+	float currentSpeed;
+	float currentSpeed_st;
+	int currentSpeed_encoder_count[10];
+	int currentSpeed_encoder_count_sum;
+	int currentSpeed_encoder_st;
+	float currentSpeed_encoder_ar;
+	float current_acceleration_encoder;
+	
+	
+	
+	float next_speed;
+	int deltaSpeed;
+	
+	double maxStepToAc;
+	double maxStepToDc;
+		
+	int distance;
+	
+	float deltaAc;
+	float deltaDc;
+	int rot_sum;
+	float enc_koef;
+	float mm_koeff;
+	uint32_t stepper;
+	
+	enum
+	{
+		ax_stop = 0,
+		ax_go = 1,
+		ax_test = 2,
+		ax_button = 3,
+	}Start;
+	
+	enum 
+	{
+		conf_ok = 1,
+		conf_not = 0,
+	}Config_State;
+	enum
+	{
+		backward = 0,		
+		no = 1,
+		forward = 2,
+	}Direct;
+	
+	enum
+	{
+		EPstop = 0,
+		EPcont = 1,
+	}EP_Flag;
+
+	enum
+	{
+		Deccel = 0,
+		Const = 1,
+		Accel = 2,
+		Ex_stop = 3,
+	}Sp_Flag;
+	
+	uint16_t EncoderFlagForDir1;
+	uint16_t EncoderFlagForDir2;
+	int EncoderDiffFlags;
+	int EncoderRotDir;
+	
+	int EncoderValue1;
+	int EncoderValue2;
+	
+	uint8_t speedCount;
+	uint8_t nextSpeedCount;
+		
+	int NumRotEncForTest;
+	int NumSteEncpForTest; 
+	
+	int EncoderAcceleration_st;
+	float EncoderAcceleration_mm;
+	int EncoderSpeedFlagForAccel1;
+	int EncoderSpeedFlagForAccel2;
+}AxisParam;
+
+
+
+
+void ComPar_GetPacket(char* data, int len);
+char* ComPar_GetAxis();
+char* ComPar_GetCommand();
+int ComPar_GetValue();
+void AxisInit();
+
+
+
+
+#endif /* COMM_PARS_H */

@@ -1,0 +1,472 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: User Userovich, Hewlett-Packard Company, LIC=DSNVE-5MZTK-MRMXP-MWFES-U0XQC-NVNJ9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Keil_v5\workspace\posicioner\Refactor_POS\MDK-ARM\MB_TCP_ADC.uvprojx
+Project File Date:  09/21/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'MB_TCP_ADC'
+compiling event_groups.c...
+compiling tasks.c...
+compiling port.c...
+compiling list.c...
+compiling queue.c...
+compiling timers.c...
+compiling croutine.c...
+compiling cmsis_os.c...
+compiling heap_4.c...
+compiling api_lib.c...
+compiling err.c...
+compiling dhcp.c...
+compiling ip6_frag.c...
+compiling dhcp6.c...
+compiling api_msg.c...
+compiling magic.c...
+compiling multilink.c...
+compiling md4.c...
+compiling inet_chksum.c...
+compiling stats.c...
+compiling ecp.c...
+compiling eui64.c...
+compiling icmp6.c...
+compiling sys_arch.c...
+compiling ipcp.c...
+compiling icmp.c...
+compiling auth.c...
+compiling vj.c...
+compiling ethip6.c...
+compiling tcp.c...
+compiling tcpip.c...
+compiling mem.c...
+compiling igmp.c...
+compiling inet6.c...
+compiling pppos.c...
+compiling arc4.c...
+compiling eap.c...
+compiling sockets.c...
+compiling tcp_out.c...
+compiling demand.c...
+compiling ip4.c...
+compiling upap.c...
+compiling fsm.c...
+compiling ip4_addr.c...
+compiling mppe.c...
+compiling chap-md5.c...
+compiling pppcrypt.c...
+compiling udp.c...
+compiling sys.c...
+compiling tcp_in.c...
+compiling netifapi.c...
+compiling ccp.c...
+compiling autoip.c...
+compiling memp.c...
+compiling sha1.c...
+compiling ip6_addr.c...
+compiling utils.c...
+compiling md5.c...
+compiling chap-new.c...
+compiling dns.c...
+compiling pbuf.c...
+compiling pppoe.c...
+compiling nd6.c...
+compiling netdb.c...
+compiling def.c...
+compiling init.c...
+compiling netbuf.c...
+compiling des.c...
+compiling ip6.c...
+compiling netif.c...
+compiling chap_ms.c...
+compiling ppp.c...
+compiling ipv6cp.c...
+compiling lcp.c...
+compiling mld6.c...
+compiling raw.c...
+compiling pppol2tp.c...
+compiling pppapi.c...
+compiling ethernet.c...
+compiling ip4_frag.c...
+compiling etharp.c...
+compiling timeouts.c...
+assembling startup_stm32f767xx.s...
+compiling lowpan6.c...
+compiling ip.c...
+compiling stm32f7xx_hal_dma_ex.c...
+compiling stm32f7xx_hal_tim.c...
+compiling stm32f7xx_hal_cortex.c...
+compiling stm32f7xx_hal_eth.c...
+compiling stm32f7xx_hal_flash.c...
+compiling stm32f7xx_hal.c...
+compiling stm32f7xx_hal_pwr_ex.c...
+compiling stm32f7xx_hal_pwr.c...
+compiling stm32f7xx_hal_i2c.c...
+compiling stm32f7xx_hal_gpio.c...
+compiling stm32f7xx_hal_rcc_ex.c...
+compiling stm32f7xx_hal_i2c_ex.c...
+compiling stm32f7xx_hal_rcc.c...
+compiling stm32f7xx_hal_dma.c...
+compiling stm32f7xx_hal_flash_ex.c...
+compiling stm32f7xx_hal_tim_ex.c...
+compiling stm32f7xx_hal_dcmi_ex.c...
+compiling stm32f7xx_hal_dcmi.c...
+compiling stm32f7xx_hal_uart.c...
+compiling freertos.c...
+compiling stm32f7xx_hal_spi.c...
+compiling system_stm32f7xx.c...
+compiling ethernetif.c...
+compiling stm32f7xx_hal_msp.c...
+compiling stm32f7xx_it.c...
+compiling main.c...
+../Inc/udp_send.h(8): warning:  #1295-D: Deprecated declaration udp_send_data - give arg types
+  void udp_send_data();
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+../Inc/encoder_control.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /* ENCODER_CONTROL_H */
+../Inc/status_control.h(33): warning:  #1295-D: Deprecated declaration switcherStateControl - give arg types
+  void switcherStateControl();
+../Inc/status_control.h(35): warning:  #1295-D: Deprecated declaration bigAxisEncoderErrorControl - give arg types
+  void bigAxisEncoderErrorControl();
+../Inc/status_control.h(37): warning:  #1295-D: Deprecated declaration getSwitcherState - give arg types
+  uint8_t getSwitcherState();
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+../Inc/packet_builder.h(50): warning:  #1295-D: Deprecated declaration udpPacketBuilder - give arg types
+  udpPacketH udpPacketBuilder();
+../Src/main.c(644): warning:  #128-D: loop is not reachable
+  	for(;;)
+../Src/main.c(711): warning:  #128-D: loop is not reachable
+  	for(;;)
+../Src/main.c(750): warning:  #181-D: argument is incompatible with corresponding format string conversion
+  							snprintf(data, len + 1, "%s", data);
+../Src/main.c(724): warning:  #550-D: variable "recv_err"  was set but never used
+  	err_t err, accept_err, recv_err;
+../Src/main.c(788): warning:  #128-D: loop is not reachable
+  	for(;;)
+../Src/main.c(848): warning:  #128-D: loop is not reachable
+  	for(;;)
+../Src/main.c(797): warning:  #177-D: variable "recv_err"  was declared but never referenced
+  	err_t err, recv_err;
+../Src/main.c(798): warning:  #177-D: variable "addr"  was declared but never referenced
+  	ip_addr_t server_ip, mk_ip, *addr;
+../Src/main.c(869): warning:  #128-D: loop is not reachable
+  	for(;;)
+../Src/main.c: 26 warnings, 0 errors
+compiling comm_pars.c...
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+../Inc/status_control.h(33): warning:  #1295-D: Deprecated declaration switcherStateControl - give arg types
+  void switcherStateControl();
+../Inc/status_control.h(35): warning:  #1295-D: Deprecated declaration bigAxisEncoderErrorControl - give arg types
+  void bigAxisEncoderErrorControl();
+../Inc/status_control.h(37): warning:  #1295-D: Deprecated declaration getSwitcherState - give arg types
+  uint8_t getSwitcherState();
+../Inc/convertor.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif /* CONVERTOR_H */
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+..\Src\comm_pars.c(123): warning:  #188-D: enumerated type mixed with another type
+  		Axx[i].status.causeOfLastErrorMF = 0;
+..\Src\comm_pars.c(124): warning:  #188-D: enumerated type mixed with another type
+  		Axx[i].status.causeOfLastStopEM = 1;
+..\Src\comm_pars.c(222): warning:  #177-D: variable "lastValue"  was declared but never referenced
+  			int lastValue;
+..\Src\comm_pars.c(171): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint8_t i = 0;
+..\Src\comm_pars.c(180): warning:  #177-D: variable "lastValue"  was declared but never referenced
+  	int lastValue;
+..\Src\comm_pars.c(755): warning:  #61-D: integer operation result is out of range
+  	Axx[cur_ax].calculating.stepsToAc = (Axx[cur_ax].target.speed.setsValue.steps *  Axx[cur_ax].target.speed.setsValue.steps - 
+IMER_FREQUENCY / 
+AX_PERIOD * 
+IMER_FREQUENCY / MAX_PERIOD) / (2 * Axx[cur_ax].target.acceleration.setsValue.steps);
+..\Src\comm_pars.c(756): warning:  #61-D: integer operation result is out of range
+  	Axx[cur_ax].calculating.stepsToDc = (Axx[cur_ax].target.speed.setsValue.steps * Axx[cur_ax].target.speed.setsValue.steps - 
+IMER_FREQUENCY / 
+AX_PERIOD * 
+IMER_FREQUENCY / MAX_PERIOD) / (2 * Axx[cur_ax].target.deceleration.setsValue.steps);
+..\Src\comm_pars.c(768): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Axx[cur_ax].calculating.deltaAc = (float)((float)Axx[cur_ax].target.acceleration.setsValue.steps/1000.0);//(float)((float)Axx[cur_ax].acceleration/1000.0)/32*DRIVER_PRESCALLER*0.6344;//*0.4758;//
+..\Src\comm_pars.c(769): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	Axx[cur_ax].calculating.deltaDc = (float)((float)Axx[cur_ax].target.deceleration.setsValue.steps/1000.0);//*0.4758;//(float)((float)Axx[cur_ax].deceleration/1000.0)/32*DRIVER_PRESCALLER*0.6344;//*0.4758;//
+..\Src\comm_pars.c(795): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\comm_pars.c(795): warning:  #940-D: missing return statement at end of non-void function "ComPar_SetComValue" 
+  }
+..\Src\comm_pars.c: 26 warnings, 0 errors
+compiling lwip.c...
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+../Src/lwip.c: 7 warnings, 0 errors
+compiling speed_control.c...
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+../Inc/udp_send.h(8): warning:  #1295-D: Deprecated declaration udp_send_data - give arg types
+  void udp_send_data();
+../Inc/status_control.h(33): warning:  #1295-D: Deprecated declaration switcherStateControl - give arg types
+  void switcherStateControl();
+../Inc/status_control.h(35): warning:  #1295-D: Deprecated declaration bigAxisEncoderErrorControl - give arg types
+  void bigAxisEncoderErrorControl();
+../Inc/status_control.h(37): warning:  #1295-D: Deprecated declaration getSwitcherState - give arg types
+  uint8_t getSwitcherState();
+..\Src\speed_control.c(227): warning:  #111-D: statement is unreachable
+  		Axx[numOfAxis].status.directEngine = backward;
+..\Src\speed_control.c(464): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\speed_control.c: 10 warnings, 0 errors
+compiling convertor.c...
+../Inc/convertor.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif /* CONVERTOR_H */
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+..\Src\convertor.c(24): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\convertor.c: 6 warnings, 0 errors
+compiling encoder_control.c...
+../Inc/encoder_control.h(36): warning:  #1-D: last line of file ends without a newline
+  #endif /* ENCODER_CONTROL_H */
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+../Inc/convertor.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif /* CONVERTOR_H */
+..\Src\encoder_control.c(38): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder.position.steps = (float)(Axx[numOfAxis].calculating.encoderRotSum + 1) * (float)
+UM_ENCODER_STEPS  - (float)((float)
+UM_ENCODER_STEPS - (float)Axx[numOfAxis].calculating.encoderValueForDir1 / 2.0)* (float)Axx[numOfAxis].calculating.encoderKoef;
+..\Src\encoder_control.c(43): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder.position.steps = ((float)Axx[numOfAxis].calculating.encoderRotSum * (float)
+UM_ENCODER_STEPS + (float)Axx[numOfAxis].calculating.encoderValueForDir1 / 2.0) * (float)Axx[numOfAxis].calculating.encoderKoef;
+..\Src\encoder_control.c(74): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder.position.steps = ((float)(Axx[numOfAxis].calculating.encoderRotSum + 1) * (float)
+UM_ENCODER_STEPS  - (float)((float)
+UM_ENCODER_STEPS - (float)Axx[numOfAxis].calculating.encoderValueForDir1 / 2.0))* (float)Axx[numOfAxis].calculating.encoderKoef;
+..\Src\encoder_control.c(79): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder.position.steps = ((float)Axx[numOfAxis].calculating.encoderRotSum * (float)
+UM_ENCODER_STEPS + (float)Axx[numOfAxis].calculating.encoderValueForDir1 / 2.0) * (float)Axx[numOfAxis].calculating.encoderKoef;
+..\Src\encoder_control.c(107): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder2.position.steps = ((float)(Axx[numOfAxis].calculating.encoder2RotSum + 1) * (float)
+UM_ENCODER_STEPS  - (float)((float)
+UM_ENCODER_STEPS - (float)Axx[numOfAxis].calculating.encoder2ValueForDir1 / 2.0))* (float)Axx[numOfAxis].calculating.encoder2Koef;
+..\Src\encoder_control.c(112): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				Axx[numOfAxis].encoder2.position.steps = ((float)Axx[numOfAxis].calculating.encoder2RotSum * (float)
+UM_ENCODER_STEPS + (float)Axx[numOfAxis].calculating.encoder2ValueForDir1 / 2.0) * (float)Axx[numOfAxis].calculating.encoder2Koef;
+..\Src\encoder_control.c: 12 warnings, 0 errors
+compiling status_control.c...
+../Inc/status_control.h(33): warning:  #1295-D: Deprecated declaration switcherStateControl - give arg types
+  void switcherStateControl();
+../Inc/status_control.h(35): warning:  #1295-D: Deprecated declaration bigAxisEncoderErrorControl - give arg types
+  void bigAxisEncoderErrorControl();
+../Inc/status_control.h(37): warning:  #1295-D: Deprecated declaration getSwitcherState - give arg types
+  uint8_t getSwitcherState();
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+../Inc/convertor.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif /* CONVERTOR_H */
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+..\Src\status_control.c(235): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\status_control.c: 16 warnings, 0 errors
+compiling flash_control.c...
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+..\Src\flash_control.c(7): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(7): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(7): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(7): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(34): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(port >= 0 && port <= 65535)
+..\Src\flash_control.c(54): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(54): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(54): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(54): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if((ad0 >= 0 && ad0 <= 255) && (ad1 >= 0 && ad1 <= 255) && (ad2 >= 0 && ad2 <= 255) && (ad3 >= 0 && ad3 <= 255))
+..\Src\flash_control.c(82): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(port >= 0 && port <= 65535)
+..\Src\flash_control.c: 18 warnings, 0 errors
+compiling packet_builder.c...
+../Inc/packet_builder.h(50): warning:  #1295-D: Deprecated declaration udpPacketBuilder - give arg types
+  udpPacketH udpPacketBuilder();
+../Inc/flash_control.h(7): warning:  #1295-D: Deprecated declaration flash_getNetworkAddress - give arg types
+  uint32_t flash_getNetworkAddress();
+../Inc/flash_control.h(10): warning:  #1295-D: Deprecated declaration flash_getPort - give arg types
+  uint16_t flash_getPort();
+../Inc/flash_control.h(13): warning:  #1295-D: Deprecated declaration flash_getUdpTrAddress - give arg types
+  uint32_t flash_getUdpTrAddress();
+../Inc/flash_control.h(16): warning:  #1295-D: Deprecated declaration flash_getUdpTrPort - give arg types
+  uint16_t flash_getUdpTrPort();
+../Inc/flash_control.h(19): warning:  #1295-D: Deprecated declaration flash_getUdpTrInterval - give arg types
+  uint16_t flash_getUdpTrInterval();
+../Inc/flash_control.h(21): warning:  #1295-D: Deprecated declaration IpReset - give arg types
+  void IpReset();
+../Inc/flash_control.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif /* FLASH_CONTROL_H*/
+../Inc/status_control.h(33): warning:  #1295-D: Deprecated declaration switcherStateControl - give arg types
+  void switcherStateControl();
+../Inc/status_control.h(35): warning:  #1295-D: Deprecated declaration bigAxisEncoderErrorControl - give arg types
+  void bigAxisEncoderErrorControl();
+../Inc/status_control.h(37): warning:  #1295-D: Deprecated declaration getSwitcherState - give arg types
+  uint8_t getSwitcherState();
+../Inc/posicioner_config.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* POSICIONER_CONFIG_H*/
+../Inc/comm_pars.h(235): warning:  #1295-D: Deprecated declaration ComPar_GetAxis - give arg types
+  char* ComPar_GetAxis();
+../Inc/comm_pars.h(236): warning:  #1295-D: Deprecated declaration ComPar_GetValue - give arg types
+  int ComPar_GetValue();
+../Inc/comm_pars.h(237): warning:  #1295-D: Deprecated declaration AxisInit - give arg types
+  void AxisInit();
+..\Src\packet_builder.c: 15 warnings, 0 errors
+linking...
+MB_TCP_ADC\MB_TCP_ADC.sct(25): warning: L6314W: No section matches pattern *.o(.flash_cfg1).
+MB_TCP_ADC\MB_TCP_ADC.sct(30): warning: L6314W: No section matches pattern *.o(.flash_cfg2).
+Program Size: Code=79784 RO-data=1700 RW-data=500 ZI-data=131324  
+Finished: 0 information, 2 warning and 0 error messages.
+FromELF: creating hex file...
+"MB_TCP_ADC\MB_TCP_ADC.axf" - 0 Error(s), 138 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_MB_TCP_ADC
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:04:06
+</pre>
+</body>
+</html>

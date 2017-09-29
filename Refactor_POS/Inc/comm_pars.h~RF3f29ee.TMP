@@ -1,0 +1,116 @@
+#ifndef COMM_PARS_H
+#define COMM_PARS_H
+
+//#include "pars_cnfig.h"
+#include <stdint.h>
+
+#define SYMBOL_NUM_AXIS 1 //number of symbols in axis
+#define SYMBOL_NUM_CMD 2 //number of symbols in command
+
+#define  AXIS_NUM  2 // number of axis
+#define COMMAND_NUM 6 //number of engines settings (speed, acceleration, deceleration, end point and oth.)
+
+#define TIMER_FREQUENCY 216000000 //
+#define MAX_PERIOD 65535 // Max period of timers
+#define MIN_PERIOD 3500 // min perion of timers
+#define PULSE_WIDTH 700 // width of PWMs puls (pulse/min_period <= 3/5)
+#define PULSE_OFF 0
+
+
+#define NUM_ENGINE_STEPS 399// steps of engines in one round
+#define NUM_ENCODER_STEPS 2499// steps of encoder in one round
+#define DRIVING_PRESCALLER 32// prescaller of driving
+
+
+
+
+#pragma anon_unions
+typedef union {
+	struct {
+		char ethAxis[SYMBOL_NUM_AXIS];
+		char ethCmd[SYMBOL_NUM_CMD];
+		char ethSymb;
+		char ethValue[9];
+	};
+} TEthPacket;
+
+enum{
+	max_speed = 0,
+	acceleration ,
+	decceleration,	
+	end_point,
+	go,
+	st,
+	
+	maxSpeedToAc,
+	maxStepToAc,
+	maxStepToMa,
+	maxStepToDc,
+};
+
+typedef struct
+{
+	int command[COMMAND_NUM];
+//	int current_speed;
+//	int max_speed;
+//	int acceleration;
+//	int decceleration;
+	int start_position;
+	int current_position;
+//	int end_point;
+//	
+//	uint8_t flagstart;
+//	
+//	int maxSpeedToAc;
+	uint64_t maxStepToAc;
+//	int maxStepToMax;
+	uint64_t maxStepToDc;
+	
+	int currentSpeed;
+	float next_speed;
+	int distance;
+	
+	enum
+	{
+		ax_stop = 0,
+		ax_go = 1,		
+	}Start;
+	
+	enum 
+	{
+		conf_ok = 1,
+		conf_not = 0,
+	}Config_State;
+	enum 
+	{
+		forward = 1,
+		backward = 0,
+	}Direct;
+	
+	enum
+	{
+		EPstop = 0,
+		EPcont = 1,
+	}EP_Flag;
+
+	enum
+	{
+		Deccel = 0,
+		Const = 1,
+		Accel = 2,
+		Ex_stop =3,
+	}Sp_Flag;
+}AxisParam;
+
+
+
+
+void ComPar_GetPacket(char* data, int len);
+char* ComPar_GetAxis();
+char* ComPar_GetCommand();
+int ComPar_GetValue();
+
+
+
+
+#endif /* COMM_PARS_H */

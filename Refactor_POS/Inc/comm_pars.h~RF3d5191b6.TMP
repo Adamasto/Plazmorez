@@ -1,0 +1,27 @@
+#ifndef COMM_PARS_H
+#define COMM_PARS_H
+
+
+
+enum{
+	acceleration = 0,
+	decceleration,
+	max_speed,
+	end_point,
+	go,
+	maxSpeedToAc,
+	maxStepToAc,
+	maxStepToMa,
+	maxStepToDc,
+};
+
+
+void ComPar_GetPacket(char* data, int len);
+char* ComPar_GetAxis();
+char* ComPar_GetCommand();
+int ComPar_GetValue();
+
+
+
+
+#endif /* COMM_PARS_H */

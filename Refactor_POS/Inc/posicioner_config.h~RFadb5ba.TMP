@@ -1,0 +1,47 @@
+#ifndef POSICIONER_CONFIG_H
+#define POSICIONER_CONFIG_H
+
+#define TIMER_X_AXIS_ENGINE TIM2
+#define TIMER_Y1_AXIS_ENGINE TIM4
+#define TIMER_Y2_AXIS_ENGINE TIM4
+
+#define TIMER_X_AXIS_ENCODER TIM1
+#define TIMER_Y1_AXIS_ENCODER TIM1
+#define TIMER_Y2_AXIS_ENCODER TIM1
+
+#define TIMER_X_AXIS_IRQn TIM2_IRQn
+#define TIMER_Y1_AXIS_IRQn TIM4_IRQn
+#define TIMER_Y2_AXIS_IRQn TIM4_IRQn
+
+#define AXIS_X_FORWARD_DIR (HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, GPIO_PIN_RESET))
+#define AXIS_X_BACKWARD_DIR (HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, GPIO_PIN_SET))
+#define AXIS_Y1_FORWARD_DIR (HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET))
+#define AXIS_Y1_BACKWARD_DIR (HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET))
+
+
+
+
+#define SYMBOL_NUM_AXIS 1 //number of symbols in axis
+#define SYMBOL_NUM_CMD 2 //number of symbols in command
+
+#define AXIS_NUM  3 // number of axis
+#define COMMAND_NUM 13 //number of engines settings (speed, acceleration, deceleration, end point and oth.)
+
+#define TIMER_FREQUENCY 108000000//216000000 //
+#define MAX_PERIOD 65535 // Max period of timers
+
+#define MIN_PERIOD 5000 // min perion of timers
+#define PULSE_WIDTH 700 // width of PWMs puls (pulse/min_period <= 3/5)
+#define PULSE_OFF 0 // Disable impulse of pwm
+
+
+#define NUM_ENGINE_STEPS 400// steps of engines in one round
+#define NUM_ENCODER_STEPS 2500// steps of encoder in one round
+#define DRIVER_PRESCALLER 12// prescaller of driving
+
+#define STEPS_IN_MM 16 //steps in one mm
+#define STEPS_IN_ROUND (NUM_ENGINE_STEPS * DRIVER_PRESCALLER) // engine steps number in one round of encoder
+#define MIN_SPEED TIMER_FREQUENCY/MAX_PERIOD // Minimum speed of engine (imulse/second)
+
+#define MID_NUM 10
+#endif /* POSICIONER_CONFIG_H*/
